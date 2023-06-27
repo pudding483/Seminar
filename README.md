@@ -1,6 +1,6 @@
 # Seminar
 Seminar in computer graphics  
   
-Using .gitignore ignore testing file  
+Using .gitignore to ignore testing file  
   
-Adding a fold to record the meeting
+Adding a folder to record the meeting
