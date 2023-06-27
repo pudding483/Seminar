@@ -1,5 +1,5 @@
 # Seminar
-seminar in computer graphics  
+Seminar in computer graphics  
   
 Using .gitignore ignore testing file  
   
