@@ -55,5 +55,5 @@
     "dotnet.highlighting.highlightRelatedRegexComponents": true,
     "csharp.inlayHints.enableInlayHintsForImplicitObjectCreation": true,
     "csharp.debug.allowFastEvaluate": false,
-    "dotnet.defaultSolution": "connect_js.sln"
+    "dotnet.defaultSolution": "connect_js.sln",
 }

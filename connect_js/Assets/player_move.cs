@@ -8,12 +8,12 @@ public class player_move : MonoBehaviour
 {
     [SerializeField] float speed = 3f;
     private string std_url = "";
-    public string std_id = "";
+    private string std_id = "";
     private List<string> movement_list = new List<string>();
-    
+
     void Start()
     {
-        
+
     }
     void Update()
     {
@@ -47,6 +47,9 @@ public class player_move : MonoBehaviour
         {
             std_url = url;
         }
-
+    }
+    public void move_cmd(string cmd)
+    {
+        movement_list.Add(cmd);
     }
 }

@@ -261,7 +261,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b816ad5cc0d524247b233e4688143b72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sp: {fileID: 1126296481}
+  sm: {fileID: 1126296481}
+  serverUrl: ws://localhost:5000
 --- !u!1 &1126296478
 GameObject:
   m_ObjectHideFlags: 0
@@ -303,10 +304,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1126296478}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2cdd5857478059041bb6d25b0da38bac, type: 3}
+  m_Script: {fileID: 11500000, guid: b61bdd48534eaf343a7b1e30d52e734a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  s: {fileID: 4274931591186241429, guid: 60d5da8b2f267dd419fd73adb144879e, type: 3}
+  student_prefab: {fileID: 4274931591186241429, guid: 60d5da8b2f267dd419fd73adb144879e, type: 3}
 --- !u!1 &1884392254
 GameObject:
   m_ObjectHideFlags: 0

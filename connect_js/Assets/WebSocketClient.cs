@@ -7,7 +7,7 @@ using Newtonsoft.Json;
 public class WebSocketClient : MonoBehaviour
 {
     public WebSocket ws;
-    public spawn_manage sp;
+    public student_manage sm;
     public string serverUrl = "ws://localhost:5000";
     private List<string> std_list = new List<string>();
     private List<List<string>> std_moves = new List<List<string>>();
@@ -46,7 +46,7 @@ public class WebSocketClient : MonoBehaviour
         {
             List<string> move = new List<string> { msg["clientId"], msg["command"] };
             std_moves.Add(move);
-            
+
         }
     }
 
@@ -82,8 +82,13 @@ public class WebSocketClient : MonoBehaviour
         }
         if (std_list.Count > 0)
         {
-            sp.studentspawn(std_list[0], serverUrl);
+            sm.studentspawn(std_list[0], serverUrl);
             std_list.RemoveAt(0);
+        }
+        if (std_moves.Count > 0)
+        {
+            sm.testing(std_moves[0][0], std_moves[0][1]);
+            std_moves.RemoveAt(0);
         }
     }
 }
