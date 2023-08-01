@@ -10,6 +10,8 @@
 connect_js/[Ll]ibrary/
 connect_js/[Ll]ibrary/Artifacts/
 connect_js/[Ll]ibrary/ShaderCache/
+connect_js/[Ll]ibrary/Bee/
+connect_js/Packages/
 connect_js/[Tt]emp/
 connect_js/[Oo]bj/
 connect_js/[Bb]uild/
