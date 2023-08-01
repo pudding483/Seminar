@@ -18,7 +18,6 @@ connect_js/[Bb]uild/
 connect_js/[Bb]uilds/
 connect_js/[Ll]ogs/
 connect_js/[Uu]ser[Ss]ettings/
-node_js/node_modules/
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
 connect_js/[Mm]emoryCaptures/
