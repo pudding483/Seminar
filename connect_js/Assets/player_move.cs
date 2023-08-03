@@ -6,10 +6,11 @@ using WebSocketSharp;
 using Newtonsoft.Json;
 public class player_move : MonoBehaviour
 {
-    [SerializeField] float speed = 3f;
-    private string std_url = "";
-    private string std_id = "";
+    [SerializeField] float speed = 75f;
+    private string std_url;
+    [SerializeField] string std_id;
     private List<string> movement_list = new List<string>();
+    public GameObject self;
 
     void Start()
     {
@@ -39,17 +40,24 @@ public class player_move : MonoBehaviour
     }
     public void init(string id, string url)
     {
-        if (id != null)
+        if (id != null && url != null)
         {
             std_id = id;
-        }
-        if (url != null)
-        {
             std_url = url;
+            self.GetComponent<camera_output>().std_id = id;
+            self.GetComponent<camera_output>().std_url = url;
         }
     }
     public void move_cmd(string cmd)
     {
         movement_list.Add(cmd);
+    }
+    public string get_id()
+    {
+        return std_id;
+    }
+    public string get_url()
+    {
+        return std_id;
     }
 }

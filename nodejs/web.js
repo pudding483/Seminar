@@ -37,6 +37,10 @@ wss.on('connection', ws => {
 				unityclient.send(JSON.stringify(msg))
 			}
 		}
+		else if(msg.type == "unity_cam"){
+			const websiteClient = webclients.get(msg.clientId)
+			websiteClient.send(JSON.stringify(msg))
+		}
 	})
 	ws.on('close', () => {
 		console.log('disconnected');

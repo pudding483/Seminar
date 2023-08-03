@@ -27,8 +27,15 @@ socket.addEventListener('open', () => {
     })
     socket.addEventListener('message', (msg) => {
         msg = JSON.parse(msg.data)
-        console.log(msg)
-        const output = document.getElementById('output');
-        output.innerHTML = '指令是' + directions[msg.command];
+        if (msg.type == "web_message") {
+            const output = document.getElementById('output');
+            output.innerHTML = '指令是' + directions[msg.command];
+        }
+        else if (msg.type == "unity_cam") {
+            const imageBase64 = msg.image;
+            const imageElement = document.getElementById('imageDisplay');
+            imageElement.src = 'data:image/jpeg;base64,' + imageBase64;
+        }
+
     });
 });
